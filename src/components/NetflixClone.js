@@ -104,8 +104,8 @@ const Header = styled.div`
     }
 
     &:hover {
-      color: #dad0ef;
-      background-color: #b4a7d6;
+      color: #e50914;
+      background-color: #990000;
     }
   }
 `;
