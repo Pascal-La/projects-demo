@@ -23,7 +23,7 @@ const InstaClone = () => {
           <VideoBg autoPlay loop muted src={video} type="video/mp4" />
         </VideoWrapper>
         <VideoInfo>
-          <AuthorText>
+          <AuthorWrapper>
             <AuthorImage>
               <img src={image} alt="" />
             </AuthorImage>
@@ -31,8 +31,15 @@ const InstaClone = () => {
               <h3>Pascal La</h3>
               <h4>Netflix Clone - Démo</h4>
               <p>Durée : 1min10</p>
+              {/* <a
+                href="https://netflix-clone.pascal.la"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Pascal La - Instaclone
+              </a> */}
             </AuthorInfo>
-          </AuthorText>
+          </AuthorWrapper>
           <VideoDescription>
             <p>
               Voici une vidéo de présentation d'un clone partiel de
@@ -166,11 +173,19 @@ const VideoInfo = styled.div`
   }
 `;
 
-const AuthorText = styled.div`
+const AuthorWrapper = styled.div`
   width: 100%;
   display: flex;
   margin-top: 1em;
 
+  a {
+    font-weight: bold;
+    color: #e50914;
+
+    &:hover {
+      color: #6113aa;
+    }
+  }
   @media (min-width: 1025px) {
     width: 50%;
   }
